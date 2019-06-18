@@ -1,0 +1,12 @@
+<h1>Today's Articles</h1>
+<% articles.forEach(function(article, i) {%>
+    <p>
+        <a href="/articles/<%=i%>"><%=article.title %></a>
+    </p>
+<% }) %>
+<br><br>
+<a href="/articles/new">Write a New Article</a>
+
+<br><br>
+
+<a href="/">BACK TO HOMEPAGE</a>

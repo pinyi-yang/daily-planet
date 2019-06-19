@@ -1,0 +1,14 @@
+<h2>Editing <%=article.title%></h2>
+
+<form action="/articles/<%=id%>/?_method=PUT" method="POST">
+<label for="articleTitle">Title: </label><br>
+<input type="text" name="articleTitle" value="<%=article.title%>" class="title">
+<br>
+<br>
+<label for="articleBody">Content: </label><br>
+<input type="text" name="articleBody" class="content" value="<%=article.body%>" wrap="soft">
+<br>
+<input type="submit" value='SUBMIT'>
+</form>
+
+<p><a href="/articles/<%=id%>">Back to article</a></p>

@@ -1,3 +1,9 @@
 <h1><%=article.title%></h1>
 <p><%=article.body%></p>
+<p>
+    <a href="/articles/edit/<%=id%>">Edit</a>
+    <form action="/articles/:id/?_method=DELETE" method="post">
+        <input type="submit" value="DELETE">
+    </form>
+</p>
 <a href="/articles">BACK TO ARTICLE LIST</a>
